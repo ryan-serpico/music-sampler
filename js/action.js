@@ -1,49 +1,57 @@
 $(document).ready(function() {
 
 // The sliding effect
-    $('#10Days').click(function() {
-        $('#smokeStuff').slideToggle();
-    });
-    $('#acidRap').click(function() {
-        $('#smokeStuff2').slideToggle();
-    });
-    $('#coloringBook').click(function() {
-        $('#nostalgiaStuff').slideToggle();
-    });
-    $('#TLOP').click(function() {
-        $('#nostalgiaStuff2').slideToggle();
-    });
+$('#10Days').click(function() {
+    $('#nostalgiaStuff').slideToggle();
+});
+$('#acidRap').click(function() {
+    $('#smokeStuff').slideToggle();
+});
+$('#coloringBook').click(function() {
+    $('#problemStuff').slideToggle();
+});
+$('#TLOP').click(function() {
+    $('#ultralightStuff').slideToggle();
+});
 
-// Hiding the player until clicked
-    function hideAll() {
-        $('#smokeStuff').hide();
-        $('#smokeStuff2').hide();
+
+      // function to hide all divs
+      function hideAll() {
         $('#nostalgiaStuff').hide();
-        $('#nostalgiaStuff2').hide();
-    }
-    hideAll();
+        $('#smokeStuff').hide();
+        $('#problemStuff').hide();
+        $('#ultralightStuff').hide();
+      }
 
-    $('.cover').click(function() {
+      // run that function right away
+      hideAll();
 
+      // when any animal is clicked, make the suitable div appear
+      $('.cover').click(function() {
+
+        // but first, hide all the divs to ensure that
+        // only one will be open, ever
         hideAll();
 
+        // here is a switch statement - this was in Codecademy
+        // "Control Flow" lesson 7
+
+        // we can get the ID of the thing that was clicked -
         switch ($(this).attr("id")) {
-            case "10Days":
-                $('#smokeStuff').show();
-                break;
-            case "acidRap":
-                $('#smokeStuff2').show();
-                break;
-            case "coloringBook":
-                $('#nostalgiaStuff').show();
-                break;
-            case "TLOP":
-                $('#nostalgiaStuff2').show();
-                break;
+          case "10Days":
+            $('#nostalgiaStuff').show();
+            break;
+          case "acidRap":
+            $('#smokeStuff').show();
+            break;
+          case "coloringBook":
+            $('#problemStuff').show();
+            break;
+          case "TLOP":
+            $('#ultralightStuff').show();
+            break;
         }
+      }); // end of function for clicking
+
+
     });
-
-
-
-
-});

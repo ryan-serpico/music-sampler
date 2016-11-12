@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Chance The Rapper</title>
     <link rel="stylesheet" href="styles/main.css">
 </head>
@@ -10,46 +11,51 @@
 <body>
 
   <!-- Headline, Jumbo image, description. -->
-    <h1>Chance The Rapper</h1>
+    <h1><span>Chance The Rapper</span></h1>
+    <h2><span>You can find the GitHub repo <a>here</a></span></h2>
     <img src="images/bigPhoto.jpg" alt="Chance The Rapper on stage" id="jumbo">
-    <p>Photo by L. Alex Frank on <a href="https://www.flickr.com/photos/91383582@N05/13454014324/in/photolist-muTkJd-muS6q4-ofCiVU-o1avbm-ohtpJm-ohEb1i-ohtpHE-hiPemF-hiPdBp-osptHv-JJBST6-hiQxrK-hiQvtB-hiPCcm-hiPGb3-hiQvYz-hiPaUk-hiQqav-hiQsR2-hiPyvw-hiPFcE-hiQyCc-hiPgdr-iAKUbw-hiQrEz-oqrqSQ-o9a3a8-o9a1Mh-ggrGa5-oqDCsR-H3VKHB-o9b6jk-nJUEoQ-atcqV2-anNdPN-7bSnbd-6j81Nm-or33HZ-atcpvg-atf4GW-6qUcG7-atcquk-atf3kS-atf4Sm-atcpJ4-atcqRT-atcqZB-atf3i9-atcoYR-88vP8/">flickr</a></p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p id="caption"><span>Photo by L. Alex Frank on <a href="https://www.flickr.com/photos/91383582@N05/13454014324/in/photolist-muTkJd-muS6q4-ofCiVU-o1avbm-ohtpJm-ohEb1i-ohtpHE-hiPemF-hiPdBp-osptHv-JJBST6-hiQxrK-hiQvtB-hiPCcm-hiPGb3-hiQvYz-hiPaUk-hiQqav-hiQsR2-hiPyvw-hiPFcE-hiQyCc-hiPgdr-iAKUbw-hiQrEz-oqrqSQ-o9a3a8-o9a1Mh-ggrGa5-oqDCsR-H3VKHB-o9b6jk-nJUEoQ-atcqV2-anNdPN-7bSnbd-6j81Nm-or33HZ-atcpvg-atf4GW-6qUcG7-atcquk-atf3kS-atf4Sm-atcpJ4-atcqRT-atcqZB-atf3i9-atcoYR-88vP8/">flickr</a></span></p>
+    <p id="description">Chicago-based rapper Chance the Rapper has been in the music scene ever since he released his first mixtape in 2011, 10 Days, which he recorded after being suspended from his high school for, you guessed it, 10 days, for possession of marijuana. He has since released two other mixtapes, Acid Rap and Coloring Book. What makes him stand out among other rappers is that he is not signed to any record label, instead choosing to continue being an independent rapper. What really makes him stand out to me is his voice. I listen to him every morning to get me ready for the rest of the day.</p>
 
 <!--Album covers-->
+<div class="albums">
   <img id="10Days" src="images/10Days.jpg" alt="10 Days mixtape cover" class="cover">
     <img id="acidRap" src="images/acidRap.jpg" alt="Acid Rap mixtape cover" class="cover bg">
     <img id="coloringBook" src="images/coloringBook.jpg" alt="Coloring Book mixtape cover" class="cover">
     <img id="TLOP" src="images/TLOP.jpg" alt="The Life of Pablo album cover" class="cover">
-    
+</div>
+
 <!-- Audio players -->
-    <div id="smokeStuff">
-        <audio id="soundtrack1" controls preload="auto">
-	  <source src="audio/smoke.mp3" type="audio/mp3">
-	  <source src="audio/smoke.ogg" type="audio/ogg">
-  </audio>
-    </div>
-    <div id="smokeStuff2"> <audio id="soundtrack2" controls preload="auto">
-	  <source src="audio/smoke.mp3" type="audio/mp3">
-	  <source src="audio/smoke.ogg" type="audio/ogg">
-  </audio>
-    </div>
+<div id="player">
     <div id="nostalgiaStuff">
-        <audio id="soundtrack3" controls preload="auto">
+      <p class="albumTitle"><span>Nostalgia</span></p>
+        <audio id="soundtrack1" controls preload="auto">
 	  <source src="audio/nostalgia.mp3" type="audio/mp3">
 	  <source src="audio/nostalgia.ogg" type="audio/ogg">
   </audio>
     </div>
-    <div id="nostalgiaStuff2">
-        <audio id="soundtrack4" controls preload="auto">
-     <source src="audio/nostalgia.mp3" type="audio/mp3">
-     <source src="audio/nostalgia.ogg" type="audio/ogg">
+    <div id="smokeStuff">
+      <p class="albumTitle"><span>Chain Smoker</span></p>
+ <audio id="soundtrack2" controls preload="auto">
+	  <source src="audio/smoke.mp3" type="audio/mp3">
+	  <source src="audio/smoke.ogg" type="audio/ogg">
   </audio>
     </div>
-
-<!-- The footer -->
-    <footer>This page was made by Ryan Serpico</footer>
-
+    <div id="problemStuff">
+      <p class="albumTitle"><span>No Problem</span></p>
+        <audio id="soundtrack3" controls preload="auto">
+	  <source src="audio/problem.mp3" type="audio/mp3">
+	  <source src="audio/problem.ogg" type="audio/ogg">
+  </audio>
+    </div>
+    <div id="ultralightStuff">
+      <p class="albumTitle"><span>Ultralight Beams</span></p>
+        <audio id="soundtrack4" controls preload="auto">
+     <source src="audio/ultralight.mp3" type="audio/mp3">
+     <source src="audio/ultralight.ogg" type="audio/ogg">
+  </audio>
+    </div>
+</div>
 <!-- Javascript -->
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/action.js"></script>
